@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS animation</title>
+
+        <!--internal css-->
+        <style>
+            @keyframes sample1 {
+                10% {background-color: red;}
+                30% {background-color: yellow;}
+                60% {background-color: green;}
+                80% {background-color: blue;}
+                100%{background-color: indigo;}
+
+            }
+
+            /* The element to apply the animation to  */
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                animation-name: sample1;
+                animation-duration: 7s;
+            }
+        </style>    
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
