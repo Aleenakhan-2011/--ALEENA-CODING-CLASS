@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text shadow,box shadow and text indent</title>
+        <style>
+          *{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+          #text{
+            text-shadow: 2px 2px 1px rgba(244, 12, 31, 0.5);
+            font-size: 24px;
+            color: #0c0c0c;
+          }
+          #box{
+            box-shadow: 9px 9px 5px rgba(15, 15, 15, 0.5);
+            padding: 20px;
+            background-color: #2dacb0;
+            font-size: 24px;
+            color: #0b0b0b;
+          }
+            #indent{
+                text-indent: 50px;
+                font-size: 20px;
+                color: #17dd52;
+            }            
+        </style>
+    </head>
+    <body>
+        <h1 id="text">We can use text-shadow to give shadow to text itself</h1>
+        
+        <h1 id="box">Or we can use box-shadow to give shadow to the element</h1>
+
+            <div>
+                <p>This is an example of text-indent.</p>
+                <p id="indent">This is an example of text-indent.</p>
+            </div>
+    </body>
+</html>
