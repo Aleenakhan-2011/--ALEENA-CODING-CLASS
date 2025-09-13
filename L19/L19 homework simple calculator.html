@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>homework simple calculator</title>
+    </head>
+    <body>
+        <h2>Simple calulator</h2>
+
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+        <p id="result5"></p>
+        <p id="result6"></p>
+
+        <script>
+            var a, b, c, d, e, f; //Statement 1
+            a = 10;       //Statement 2
+            b = 5;       //Statement 3
+
+            //addition
+            c = a + b;   //Statement 4
+
+            //subtraction
+            d = a - b;   //Statement 5
+
+            //multiplication
+            e = a * b;   //Statement 6
+
+            //division
+            f = a / b;   //Statement 7
+            
+            document.getElementById("result1").innerHTML = "The value of a is: " + a + ".";
+            document.getElementById("result2").innerHTML = "The value of b is: " + b + ".";
+            document.getElementById("result3").innerHTML = "The value of c (a + b) is: " + c + ".";
+            document.getElementById("result4").innerHTML = "The value of d (a - b) is: " + d + ".";
+            document.getElementById("result5").innerHTML = "The value of e (a * b) is: " + e + ".";
+            document.getElementById("result6").innerHTML = "The value of f (a / b) is: " + f + ".";   
+        </script>
+    </body>
+</html>
