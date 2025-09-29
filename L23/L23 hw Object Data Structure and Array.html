@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hw object data structure and array</title>
+    </head>
+    <body>
+        
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+        <p id="demo"></p>
+
+        <script>
+            var drinks = ["coffee", "tea", "juice", "water", "soda", "milk", "lemonade", "smoothie", "hot chocolate", "energy drink"];
+
+            document.getElementById("myjoin").innerHTML = drinks.join(" * ");
+
+            drinks.pop();
+            document.getElementById("myfirstpop").innerHTML = drinks;
+
+            drinks.pop();
+            document.getElementById("mysecondpop").innerHTML = drinks;
+        </script>
+
+        <script>
+            
+            var Drinks = [
+                "coffee",
+                "tea",
+                "juice",
+                "water",
+            ];
+            document.getElementById("demo").innerHTML = Drinks[3];
+        </script>
+    </body>
+</html>
