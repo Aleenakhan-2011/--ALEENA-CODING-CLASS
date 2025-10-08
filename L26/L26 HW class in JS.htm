@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HW class in JS</title>
+    </head>
+    <body>
+        <h2>Javascript Class inheritance</h2>
+        <p id="details"></p>
+        <p id="greetings"></p>
+
+        <script>
+            class Student { //parent class
+                constructor(name) {
+                    this.studentName = name;
+                }
+
+                static hello() {
+                    return "Hello";
+                }
+                
+                present() {
+                    return 'My name is  ' + this.studentName;
+                }
+            }
+
+            class Grade extends Student { //child class
+                  constructor(name, grade) {
+                    super(name); //call the parent constructor with super keyword
+                    this.studentGrade = grade;
+                }
+                
+                show() {
+                    return this.present() + ', from ' + this.studentGrade;
+                }
+            }
+
+            let myStudent = new Grade("Ali", "grade 5");
+            document.getElementById("details").innerHTML = myStudent.show();
+            //hello() is static method cannot be accessed by object myStudent
+            document.getElementById("greetings").innerHTML = Student.hello();
+        </script>
+    </body>
+</html>
