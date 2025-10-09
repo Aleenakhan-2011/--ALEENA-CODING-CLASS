@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evaluate variables</title>
+    </head>
+    <body>
+        <h2>Evaluate variables</h2>   
+        <p>Click the button to evaluate variables</p>
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="result"></p>
+        
+
+        <script>
+            function myFunction() {
+                var x = 5;
+                var y = 10;
+                var a = eval("x + y") + "<br>";
+                var b = eval("2 * 2") + "<br>";
+                var c = eval("y - x") + "<br>";
+
+                var total = a + b + c;
+                document.getElementById("result").innerHTML = total;
+            }
+        </script>       
+    </body>
+</html>
