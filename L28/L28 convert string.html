@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Convert string</title>
+    </head>
+    <body>
+        <h2>The Javascript String() Method</h2>
+        
+        <p>The String() method can convert a number to string.</p>
+
+        <p id="number_result"></p>
+        <p id="string_result"></p>
+
+        <script>
+            var x = 13;
+            var y = 35;
+            document.getElementById("number_result").innerHTML = x + y;
+
+            // Does not add because it is a string it concatenates
+            document.getElementById("string_result").innerHTML = String(x) + String(y);
+        </script>
+    </body>
+</html>
