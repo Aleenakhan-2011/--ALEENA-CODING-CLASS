@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:cursive;
+    background-color:rgb(238, 131, 107);
+}
