@@ -1,0 +1,9 @@
+
+#income, #expense{
+    background-color: rgba(44, 221, 177, 0.216);
+    font-family:'Times New Roman', Times, serif, sans-serif;
+}
+#calculate-btn{
+    background-color: rgba(17, 147, 212, 0.492);
+    font-family:cursive;
+}   
