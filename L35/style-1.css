@@ -1,0 +1,53 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.row {
+    margin: 15px ;
+}
+input[type="number"] {
+    width: 260px;
+    padding: 12px;
+    border: 2px solid #0e0d0d;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+btn:hover {
+    background-color: #555;
+}
+
+#balance {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
