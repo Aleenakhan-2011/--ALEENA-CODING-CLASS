@@ -17,14 +17,6 @@ class rectangle(shape): #child class
     def area(self):
         return self.width * self.length
     
-class triangle(shape): #child class
-    def __init__(self, s):
-        shape_name = "Triangle"
-        super().__init__(s, s, shape_name)
-
-    def area(self):
-        return 0.5 * self.side * self.side
-
 class square(shape): #child class
     def __init__(self, s):
         shape_name = "Square"
@@ -36,7 +28,7 @@ class square(shape): #child class
         return self.side * self.side
     
 #object which calls the constructor
-shape = int(input("Choose a shape to calculate area (1-Rectangle, 2-Triangle, 3-Square): "))
+shape = int(input("Choose a shape to calculate area (1-Rectangle, 2-2Square): "))
 
 if shape == 1:
     w = int(input("Enter the width of the rectangle: "))
@@ -47,13 +39,6 @@ if shape == 1:
     print("Area of Rectangle:", rect.area())
 
 elif shape == 2:
-    s = int(input("Enter the side length of the triangle: "))
-    
-    tri = triangle(s)
-    tri.printdetails()
-    print("Area of Triangle:", tri.area())
-
-elif shape == 3:
     s = int(input("Enter the side length of the square: "))
     
     sq = square(s)
